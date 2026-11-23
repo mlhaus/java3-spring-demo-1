@@ -1,4 +1,4 @@
-package edu.kirkwood.java3springdemo;
+package edu.kirkwood;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
