@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html th:lang="${#locale.language}" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title th:text="#{app.title}">Hello World</title>
 </head>
 <body>
-<h1 th:text="#{app.title}">Hello World</h1>
+<h1><span th:text="#{greeting}">Hello, and welcome to the</span> <span th:text="#{app.title}">Shoe Database</span></h1>
+
+<div>
+    <span th:text="#{lang.change}">Language</span>:
+    <a th:href="@{''(lang='en')}">English</a> |
+    <a th:href="@{''(lang='es')}">Español</a> |
+    <a th:href="@{''(lang='ar')}">العربية</a>
+</div>
 
 </body>
 </html>
